@@ -2,6 +2,8 @@
 
 A web application for yoga classes was to be created as part of a FlexMoney assignment.
 
+[Website Link](https://badjatya-flexmoney-assignment.netlify.app/)
+
 ## Screenshots
 
 ### Home Page
@@ -15,6 +17,10 @@ A web application for yoga classes was to be created as part of a FlexMoney assi
 ### Success Page
 
 ![](./client/src/App/assets/docs/success.png)
+
+### ER Diagram
+
+![](./Er.png)
 
 ## Installation
 
