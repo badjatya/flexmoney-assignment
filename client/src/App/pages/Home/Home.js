@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 // Importing Images
-import yogaImg from "../assets/yoga.svg";
+import yogaImg from "../../assets/yoga.svg";
 
 // Importing Styles
 import "./Home.scss";

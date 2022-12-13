@@ -1,13 +1,15 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
 
 // Importing Pages
-import Home from "./App/pages/Home";
+import { Home, Enroll } from "./App/pages";
 
 const App = () => {
   return (
-    <div>
-      <Home />
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/enroll" element={<Enroll />} />
+    </Routes>
   );
 };
 
