@@ -33,8 +33,6 @@ exports.enroll = async (req, res) => {
         year,
       });
 
-      console.log(paymentExist);
-
       //   If payment exist throwing error
       if (paymentExist) {
         return customError(
