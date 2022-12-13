@@ -16,5 +16,12 @@
   "bugs": {
     "url": "https://github.com/badjatya/flexmoney-assignment/issues"
   },
-  "homepage": "https://github.com/badjatya/flexmoney-assignment#readme"
+  "homepage": "https://github.com/badjatya/flexmoney-assignment#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mongoose": "^6.8.0",
+    "validator": "^13.7.0"
+  }
 }
