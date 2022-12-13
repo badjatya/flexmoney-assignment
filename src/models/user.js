@@ -21,6 +21,14 @@ const userSchema = new mongoose.Schema(
       maxlength: [50, "Email must be less than 50 characters"],
       validate: validator.isEmail,
     },
+    batch: {
+      type: String,
+      required: [true, "A user must have a batch"],
+      enum: {
+        values: ["6-7 AM", "7-8 AM", "8-9 AM", "5-6 PM"],
+        message: "Please select from the batch category",
+      },
+    },
     age: {
       type: Number,
       min: 18,
