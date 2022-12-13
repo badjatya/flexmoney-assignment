@@ -8,12 +8,7 @@ const app = express();
 
 // Middlewares
 app.use(express.json());
-app.use(
-  cors({
-    origin: "https://badjatya-flexmoney-assignment.netlify.app/",
-    credentials: true,
-  })
-);
+app.use(cors());
 
 // Enrolling user routes
 app.use("/api/v1/user", require("./src/routes/user"));

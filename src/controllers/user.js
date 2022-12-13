@@ -8,6 +8,7 @@ const customError = require("../utils/customError");
 // User can enroll
 exports.enroll = async (req, res) => {
   try {
+    res.set("Access-Control-Allow-Origin", "*");
     // Destructuring request body
     const { name, email, batch, age } = req.body;
 
