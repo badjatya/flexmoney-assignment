@@ -111,3 +111,26 @@
     }
   }
 }
+
+.success {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  div {
+    height: 300px;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .btn-primary {
+      border: none;
+      outline: none;
+      display: block;
+      margin-top: 1rem;
+    }
+  }
+}
