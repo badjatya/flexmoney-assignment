@@ -71,13 +71,16 @@ const Enroll = () => {
 
     const requestOptions = {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
+      headers: {
+        "Content-Type": "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
       body: JSON.stringify({ name, email, age, batch: batch.value }),
     };
 
     // Sending request
     const res = await fetch(
-      "http://localhost:5000/api/v1/user/enroll",
+      "https://badjatya-flexmoney-assignment.onrender.com/api/v1/user/enroll",
       requestOptions
     );
     const response = await res.json();
