@@ -15,5 +15,8 @@ app.use(
   })
 );
 
+// Enrolling user routes
+app.use("/api/v1/user", require("./src/routes/user"));
+
 // Exporting app
 module.exports = app;

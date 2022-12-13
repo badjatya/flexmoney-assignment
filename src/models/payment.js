@@ -11,6 +11,14 @@ const paymentSchema = new mongoose.Schema(
       type: Number,
       default: 500,
     },
+    month: {
+      type: Number,
+      required: [true, "A payment must have a month"],
+    },
+    year: {
+      type: Number,
+      required: [true, "A payment must have a year"],
+    },
   },
   {
     timestamps: true,
@@ -18,4 +26,4 @@ const paymentSchema = new mongoose.Schema(
 );
 
 // Exporting Model
-module.exports = mongoose.model("User", paymentSchema);
+module.exports = mongoose.model("Payment", paymentSchema);
