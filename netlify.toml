@@ -1,2 +1,2 @@
 [build]
-  base = "client/"
+  base = "client"
